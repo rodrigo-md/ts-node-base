@@ -1,0 +1,34 @@
+{
+    "name": "ts-node-api-base",
+    "version": "1.0.0",
+    "description": "A base project for start a node application using typescript",
+    "main": "/dist/app.js",
+    "author": "Rodrigo Martinez Diaz",
+    "license": "MIT",
+    "scripts": {
+        "test": "jest --verbose",
+        "coverage": "jest --verbose --coverage",
+        "test:watch": "jest --verbose --watchAll",
+        "lint": "npx eslint src --ext .ts",
+        "start": "ts-node src/app.ts",
+        "build": "tsc",
+        "build:watch": "tsc --watch",
+        "build:clean": "rm -rf dist"
+    },
+    "devDependencies": {
+        "@types/jest": "^24.0.18",
+        "@types/node": "^12.7.4",
+        "eslint": "^6.3.0",
+        "husky": "^3.0.5",
+        "jest": "^24.9.0",
+        "prettier": "^1.18.2",
+        "ts-jest": "^24.0.2",
+        "ts-node": "^8.3.0",
+        "typescript": "^3.6.2"
+    },
+    "husky": {
+        "hooks": {
+            "pre-push": "npm test && npm run lint"
+        }
+    }
+}
