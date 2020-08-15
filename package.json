@@ -17,6 +17,8 @@
         "build:clean": "rm -rf dist"
     },
     "devDependencies": {
+        "@commitlint/cli": "^9.1.1",
+        "@commitlint/config-conventional": "^9.1.1",
         "@types/jest": "^24.0.18",
         "@types/node": "^12.7.4",
         "@typescript-eslint/eslint-plugin": "^3.9.0",
@@ -36,7 +38,8 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "lint-staged"
+            "pre-commit": "lint-staged",
+            "commit-msg": "npx commitlint -E HUSKY_GIT_PARAMS"
         }
     },
     "lint-staged": {
