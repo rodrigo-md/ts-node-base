@@ -44,7 +44,7 @@ compile the typescript code into the dist folder
 
 compile the typescript code and keep the compiler on watch mode.
 
-### `yarn build:clean`
+### `yarn clean`
 
 remove the dist folder
 
@@ -58,6 +58,6 @@ Run `lint-staged` para corregir errores de formato antes de construir el commit.
 
 ### `commit-msg`
 
-Al momento de crear un commit se ejecuta `commitlint` para verificar que el formato del commit respete los tipos de commits que utiliza `commitizen`.
+When a commit is created, execute the package `commitlint` to validate that the new commit apply [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
-> Los commits cuyo mensaje comiencen con **wip o WIP** seran excluidos de este chequeo
+> The new commits wich their message start by **wip o WIP** will be exclude from this validation process
