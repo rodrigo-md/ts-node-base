@@ -11,7 +11,7 @@
         "test:watch": "jest --verbose --watchAll",
         "lint": "npx eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
         "commit": "git-cz",
-        "start": "ts-node src/app.ts",
+        "start": "ts-node src/index.ts",
         "build": "tsc",
         "build:watch": "tsc --watch",
         "build:clean": "rm -rf dist"
@@ -25,6 +25,7 @@
         "@typescript-eslint/parser": "^3.9.0",
         "commitizen": "^4.1.2",
         "cz-conventional-changelog": "3.2.0",
+        "dotenv": "^8.2.0",
         "eslint": "^7.7.0",
         "eslint-config-prettier": "^6.11.0",
         "eslint-plugin-prettier": "^3.1.4",
