@@ -14,7 +14,7 @@
         "start": "ts-node src/index.ts",
         "build": "tsc",
         "build:watch": "tsc --watch",
-        "build:clean": "rm -rf dist"
+        "clean": "rm -rf dist"
     },
     "devDependencies": {
         "@commitlint/cli": "^9.1.1",
