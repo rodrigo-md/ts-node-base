@@ -1,6 +1,9 @@
 # ide
 .vscode
 
+# git hooks
+.husky
+
 # dependencies
 node_modules
 
