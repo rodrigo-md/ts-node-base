@@ -1,7 +1,7 @@
-import exampleMiddleware from '../example';
+import {sum} from '../example';
 
 describe('Example sum middleware', () => {
     it('should given a and b argument return the sum of both', () => {
-        expect(exampleMiddleware(4, 6)).toBe(10);
+        expect(sum(4, 6)).toBe(10);
     });
 });
